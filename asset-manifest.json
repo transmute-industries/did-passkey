@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/did-passkey/static/css/main.820fc682.css",
+    "main.js": "/did-passkey/static/js/main.344027e6.js",
+    "static/js/787.759e47f1.chunk.js": "/did-passkey/static/js/787.759e47f1.chunk.js",
+    "index.html": "/did-passkey/index.html",
+    "main.820fc682.css.map": "/did-passkey/static/css/main.820fc682.css.map",
+    "main.344027e6.js.map": "/did-passkey/static/js/main.344027e6.js.map",
+    "787.759e47f1.chunk.js.map": "/did-passkey/static/js/787.759e47f1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.820fc682.css",
+    "static/js/main.344027e6.js"
+  ]
+}
