@@ -1,0 +1,20 @@
+name: Pages
+on: [push]
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install Library
+        run: npm i
+      - name: Install Example
+        run: npm i
+        working-directory: example
+      - name: Build Example
+        run: npm run build
+        working-directory: example
+      - name: Deploy Example 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: example/build # The folder the action should deploy.
