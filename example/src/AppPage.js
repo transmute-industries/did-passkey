@@ -5,7 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
+import CodeIcon from '@mui/icons-material/Code';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -31,14 +31,16 @@ export default function ResponsiveDrawer(props) {
       <Toolbar />
       <Divider />
       <List>
-      <ListItem  disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-              <InboxIcon />
-              </ListItemIcon>
-              <ListItemText primary={'Home'} />
-            </ListItemButton>
-          </ListItem>
+        <ListItem  disablePadding onClick={()=>{
+          window.open('https://github.com/transmute-industries/did-passkey')
+        }}>
+          <ListItemButton>
+            <ListItemIcon>
+              <CodeIcon />
+            </ListItemIcon>
+            <ListItemText primary={'Source Code'} />
+          </ListItemButton>
+        </ListItem>
       </List>
     
     </div>
